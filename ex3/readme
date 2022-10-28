@@ -1,0 +1,14 @@
+exporting symbols -
+"core" kernel symbols will be found in /boot/System.Map.... file (core - as part of the kernel builtins)
+while others will be found @ /proc/kallsyms
+
+ex3a - exposing a function
+
+ex3b & ex3c - exposing a function(b) and using it(c)
+you can also load it with "modprobe"
+but u need to create a simlink 
+``` sudo ln -s ${PWD}/<module>.ko /lib/modules/`uname -r`/kernel/misc/ ```
+refresh dependency with 
+```sudo depmod -a```
+and now you can load the module e.g:
+```sudo modprobe ex3c```

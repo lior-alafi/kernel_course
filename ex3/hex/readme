@@ -1,0 +1,9 @@
+shares a struct between modules
+and also prints the data in hex form as well
+
+
+lior@lior-VirtualBox:~/projects/kernel_course/ex3/hex$ sudo dmesg 
+[ 2172.726151] kinit: (src) HI name = lior alafi x = 36 y = 180
+[ 2179.418901] kinit: (dest) name = lior alafi x = 36 y = 180
+[ 2179.418906] buffer: 00000000e488e1b2: 24 00 00 00 b4 00 00 00 6c 69 6f 72 20 61 6c 61  $.......lior ala
+[ 2179.418909] buffer: 00000000eb1e3a86: 66 69 00 00 00 00 00 00 00 00 00 00              fi..........
