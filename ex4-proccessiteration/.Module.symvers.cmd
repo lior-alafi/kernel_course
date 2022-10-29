@@ -1,1 +1,0 @@
-cmd_/home/lior/projects/kernel_course/ex4-proccessiteration/Module.symvers := sed 's/\.ko$$/\.o/' /home/lior/projects/kernel_course/ex4-proccessiteration/modules.order | scripts/mod/modpost -m -a  -o /home/lior/projects/kernel_course/ex4-proccessiteration/Module.symvers -e -i Module.symvers   -T -

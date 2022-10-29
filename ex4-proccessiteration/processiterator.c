@@ -31,7 +31,7 @@ static int kern_start(void)
     pr_info("%s: starting %s\n", __func__, current->comm);
     print_hex_dump(KERN_INFO, "", DUMP_PREFIX_ADDRESS, 16, 1, current->mm, sizeof(struct mm_struct), 1);
     /*
-    for(p=&init_task; next_task(p) != &init_task;)
+    for (p = &init_task ; (p = next_task(p)) != &init_task ; )
     */
     for_each_process(task_list)
     {

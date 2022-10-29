@@ -1,1 +1,0 @@
-cmd_/home/lior/projects/kernel_course/ex4-proccessiteration/processiterator.mod := { echo  /home/lior/projects/kernel_course/ex4-proccessiteration/processiterator.o;  echo; } > /home/lior/projects/kernel_course/ex4-proccessiteration/processiterator.mod
